@@ -1,0 +1,106 @@
+.body {
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    /* background: radial-gradient(circle, rgba(43,1,18,1) 0%, rgba(123,140,211,1) 35%, rgba(255,255,255,1) 100%); */
+    /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(143,162,241,1) 35%, rgba(235,35,35,1) 100%); */
+    /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(219,226,255,1) 35%, rgba(255,117,117,1) 100%); */
+    text-align: center;
+}
+
+.title{
+    color: white;
+}
+
+.pokemon-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.pokemon-block,
+.pokemon-block-back{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+}
+
+.img-container{
+    background-image: url(../assets/blob.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pokemon-block p{
+    margin: 5px;
+}
+
+.name{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.pagination{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.card-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+}
+
+.pokemon-block,
+.pokemon-block-back{
+    width: 100€;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.pokemon-block-back{
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0%;
+}
+
+.stat_hp{
+    color: green;
+    font-size: large;
+    font-family: fantasy;
+}
+
+.stat_atk{
+    color: red;
+    font-size: large;
+    font-family: fantasy;
+}
+
+.stat_def{
+    color: blue;
+    font-size: large;
+    font-family: fantasy;
+}
+
+.pokedex_logo{
+    width: 25%;
+    height: 25%;
+}
+
+.header{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#container_input{
+    margin-top: 15px;
+}
